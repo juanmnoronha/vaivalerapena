@@ -1,0 +1,1098 @@
+/* ==========================================================================
+   Site Styles
+   ========================================================================== */
+
+/* ==========================================================================
+   @imports
+   ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,400italic,300italic,300,600,600italic,700italic,800italic);
+@import url(font.css);
+
+/* ==========================================================================
+   Bases
+   ========================================================================== */
+
+*,
+*:after,
+*::before {
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'bebas_neuebold';
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  display: block;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+#header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+.navbar {
+  padding: 14px 0;
+}
+
+.navbar.sticky {
+  background-color: rgba(0, 0, 0, .8);
+  padding: 8px 0;
+}
+
+.navbar-nav>li>a {
+  text-transform: uppercase;
+}
+
+.navbar-inverse {
+  background-color: transparent;
+}
+
+.navbar-fixed-top {
+  border-width: 0; 
+}
+
+.navbar-brand {
+  background: url(../img/logo.png) no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  height: 56px;
+  width: 246px;
+  text-indent: -9999px;
+}
+
+.sticky .navbar-brand {
+  height: 46px;
+  width: 202px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: rgba(250, 250, 250, .6);
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+  color: rgba(250, 250, 250, 1);
+}
+
+.navbar-inverse .navbar-nav>li>.btn-donate {
+  background-color: #f03;
+  border-radius: 6px;
+  color: #fff;
+  padding-bottom: 8px;
+  padding-top: 8px; 
+  top: 7px;
+}
+
+.navbar-inverse .navbar-nav>li>.btn-donate:hover {
+  background-color: #c03;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+  background-color: transparent; 
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+  background-color: #000;
+  max-height: 680px;
+  overflow: hidden;
+  position: relative;
+}
+
+.home .hero {
+  background: transparent;
+  padding: 339.5px 0;
+}
+
+.page .hero {
+  padding: 339.5px 0;
+}
+
+.page .hero-vai-valer-a-pena {
+  background: #000 url(../img/hero-img-1.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.page .hero-mais-agua {
+  background: #000 url(../img/hero-img-2.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.page .hero-impacto-sertao-livre {
+  background: #000 url(../img/hero-img-3.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.page .hero-livre-ser {
+  background: #000 url(../img/hero-img-4.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.page .hero-projects {
+  background: #000 url(../img/hero-img-5.jpg) no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 139.5px 0;
+}
+
+.page .hero-join-us {
+  background: #000 url(../img/hero-img-6.jpg) no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 139.5px 0;
+}
+
+.page .hero-contact {
+  background: #000 url(../img/hero-img-7.jpg) no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 139.5px 0;
+}
+
+.page .hero-donation {
+  background: #000 url(../img/hero-donation.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.page .hero-projects .title, .page .hero-join-us .title, .page .hero-contact .title {
+  border: none;
+}
+
+.hero .video {
+  height: auto;
+  min-height: 100%;
+  /*min-width: 100%;*/
+  padding: 0;
+  position: fixed;
+  top: 0;
+  /*transform: translateX(-50%);*/
+  z-index: -999;
+}
+
+.hero .title {
+  border: none;
+  color: #fff;
+  font-family: 'bebas_neueregular';
+  font-size: 38px;
+  line-height: 58px;
+  margin-bottom: 8px;
+  max-width: 100%;
+}
+
+.hero .title:after {
+  content: none;
+}
+
+.hero .title strong {
+  color: #f03;
+  display: block;
+  font-family: 'bebas_neuebold';
+  font-size: 60px;
+}
+
+.hero .btn {
+  background-color: #f03;
+  border-color: #f03;
+}
+
+.hero .btn:hover {
+  background-color: #f03;
+  border-color: #f03;
+}
+
+.hero .title-section {
+  border: 2px solid #fff;
+  font-family: 'bebas_neuebold';
+  font-size: 80px;
+  left: 50%;
+  line-height: 68px;
+  margin-bottom: 0;
+  max-width: 700px;
+  padding-top: 30px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero .subtitle-section {
+  font-size: 48px;
+}
+
+/* ==========================================================================
+   Video
+   ========================================================================== */
+
+.video-background {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-height: 780px;
+  z-index: 0;
+}
+
+.video-background video {
+    display: block;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 0;
+   min-width: 100%;
+}
+
+/* ==========================================================================
+   Intro
+   ========================================================================== */
+
+.intro {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.intro .call-to-action {
+  background-color: #fff;
+  border-radius: 6px;
+  border: 8px solid #f03;
+  color: #f03;
+  display: block;
+  font-size: 100px;
+  line-height: 90px;
+  margin: 40px auto 0;
+  min-height: 120px;
+  padding: 20px;
+  position: relative;
+  text-align: justify;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.intro .call-to-action:hover {
+  background-color: #f03;
+  color: #fff;
+}
+
+.intro-page {
+  background: #f03;
+  padding: 60px 0;
+}
+
+.intro-vai-valer-a-pena {
+  background: #f03;
+}
+
+.intro-mais-agua {
+  background: #55b0c5;
+}
+
+.intro-impacto-sertao-livre {
+  background: #229b8c;
+}
+
+.intro-livre-ser {
+  background: #f58245;
+}
+
+.intro-page .intro-brand {
+  margin-bottom: 20px;
+}
+
+.intro-page p, .intro-page li {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+}
+
+.intro-page li {
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   Projects
+   ========================================================================== */
+
+.projects {
+  background-color: #f4f4f4;
+  padding: 80px 0;
+}
+
+.thumb {
+  cursor: default;
+  display: block;
+  margin: 40px auto 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.thumb img {
+  -webkit-transform: scale3d(1, 1, 1);
+  -webkit-transition: all .2s linear;
+  display: block;
+  margin: 0 auto;
+  transform: scale3d(1, 1, 1);
+  transition: all .2s linear;
+  width: 100%;
+}
+
+.projects .thumb:hover img {   
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+  transform: scale3d(1.2, 1.2, 1); 
+}
+
+.projects .caption, .intro .caption {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* ==========================================================================
+   Join Us
+   ========================================================================== */
+
+.what-we-can {
+  background: #000 url(../img/what-we-can-img.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.what-we-can .title, .what-we-can p {
+  color: #fff;
+}
+
+.what-we-can p {
+  margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   Donate
+   ========================================================================== */
+
+.donate {
+  background: #f03;
+  padding: 80px 0;
+}
+
+.donate .title, .donate p {
+  color: #fff;
+}
+
+.donate .title {
+  color: #fff;
+  font-size: 32px;
+  font-family: 'bebas_neueregular';
+  line-height: 48px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.donate .title:after {
+  content: none;
+}
+
+.donate .title strong {
+  color: #fff;
+  display: block;
+  font-size: 58px;
+  margin-top: 10px;
+}
+
+.donate p {
+  margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+  background: #000;
+}
+
+/* ==========================================================================
+   Get In Touch
+   ========================================================================== */
+
+.get-in-touch {
+  background: #000 url(../img/get-in-touch-img.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.get-in-touch .title {
+  color: #fff;
+}
+
+.get-in-touch .title:after {
+  background-color: #fff;
+}
+
+.get-in-touch p {
+  color: #fff;
+}
+
+.contact-info {
+  padding-top: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact-info .item {
+  border: 2px solid #f03;
+  display: inline-block;
+  float: none;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.contact-info .item:hover {
+  background: #f03;
+}
+
+.contact-info .item:hover .label, .contact-info .item:hover .icon:before {
+  color: #fff;
+}
+
+.contact-info .item .icon, .contact-info .item .label {
+  display: block;
+  float: left;
+  position: relative;
+}
+
+.contact-info .item .icon {
+  border-right: 2px solid #f03;
+  color: #fff;
+  height: 54px;
+  width: 20%;
+}
+
+.contact-info .item .label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+.contact-info .email .label {
+  font-size: 12px;
+}
+
+.contact-info .item .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info .icon:before, .social .icon:before {
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-info .icon:before {
+  font-size: 24px;
+}
+
+/* ==========================================================================
+   Share
+   ========================================================================== */
+
+.share {
+  background: #000;
+  padding: 40px 0;
+}
+
+.social {
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.social .icon {
+  background: #000;
+  border-radius: 50%;
+  border: 2px solid #f03;
+  color: #f03;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  margin: 0 6px;
+  position: relative;
+  text-decoration: none;
+  width: 40px;
+}
+
+.social .icon:hover {
+  background-color: #f03;
+}
+
+.social .icon:before {
+  font-size: 18px;
+}
+
+.social .icon:hover:before {
+  color: #000;
+}
+
+.copy {
+  color: #999;
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.by {
+  color: #999;
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.by a {
+  color: #999;
+  text-decoration: none;
+}
+
+.by a:hover {
+  color: #f03;
+}
+
+/* ==========================================================================
+   The Incarnate Love
+   ========================================================================== */
+
+.the-incarnate-love {
+  background: url(../img/hero-img-0.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.the-incarnate-love .title, .the-incarnate-love p {
+  color: #fff;
+}
+
+.the-incarnate-love .title:before {
+  background: url(../img/icon-the-incarnate-love.png) no-repeat center center;
+  content: '';
+  display: block;
+  height: 90px;
+  margin: 0 auto 20px;
+  position: relative;
+  width: 90px;
+}
+
+/* ==========================================================================
+   All Reward
+   ========================================================================== */
+
+.all-reward {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+}
+
+.all-reward .title:before {
+  background: url(../img/icon-all-reward.png) no-repeat center center;
+  content: '';
+  display: block;
+  height: 90px;
+  margin: 0 auto 20px;
+  position: relative;
+  width: 90px;
+}
+
+/* ==========================================================================
+   A Love Plataform
+   ========================================================================== */
+
+.a-love-plataform {
+  background-color: #f03;
+  padding: 60px 0;
+}
+
+.a-love-plataform .title, .a-love-plataform p {
+  color: #fff;
+}
+
+.a-love-plataform .title:before {
+  background: url(../img/icon-a-love-plataform.png) no-repeat center center;
+  content: '';
+  display: block;
+  height: 90px;
+  margin: 0 auto 20px;
+  position: relative;
+  width: 90px;
+}
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+
+.contact, .join-us {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+}
+
+.contact .contact-info {
+  padding: 0 0 40px;
+}
+
+.contact .contact-info .item {
+  border-color: #444;
+}
+
+.contact .contact-info .item:hover {
+  background: #444;
+}
+
+.contact .contact-info .item:hover .label, .contact .contact-info .item:hover .icon:before {
+  color: #fff;
+}
+
+.contact .contact-info .item .icon {
+  border-color: #444;
+  color: #444;
+}
+
+.contact .contact-info .item .label {
+  color: #444;
+}
+
+.contact .contact-info .item .link {
+  color: #444;
+}
+
+/* ==========================================================================
+   Donation
+   ========================================================================== */
+
+.donation {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.donation input[type=radio] {
+    display: none; 
+    margin: 10px;
+}
+ 
+.donation input[type=radio] + .label-donate {
+  background-color: #aaa;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: 'bebas_neuelight';
+  font-size: 24px;
+  font-weight: 300;
+  height: 220px;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+  padding: 20px 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.donation input[type=radio] + .label-month {
+  background-color: #aaa;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: 'bebas_neuelight';
+  font-size: 24px;
+  font-weight: 300;
+  height: auto;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+  padding: 20px 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.donation input[type=radio]:checked + .label-donate { 
+  background-image: none;
+  background-color: #f03;
+}
+
+.donation input[type=radio]:checked + .label-month { 
+  background-image: none;
+  background-color: #f03;
+}
+
+.donation .value {
+  font-family: 'bebas_neuebold';
+  font-size: 60px;
+  display: block;
+}
+
+.donation .value sup {
+  font-family: 'bebas_neueregular';
+  font-size: 28px;
+  top: -18px;
+  right: -8px;
+}
+
+.donation .other-value {
+  display: block;
+  font-family: 'bebas_neuebold';
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.donation .field {
+  color: #aaa;
+  font-family: 'bebas_neuebold';
+  font-size: 22px;
+  display: block;
+  margin: 10px auto 0;
+  padding: 8px;
+  width: 96%;
+}
+
+.donation .field-other {
+  color: #444 !important;
+}
+
+.donation .btn {
+  background-color: transparent;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -64px;
+  min-width: 128px;
+  position: absolute;
+}
+
+.donation .btn:hover, .donation .btn:focus {
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+
+/* ==========================================================================
+   Content Page
+   ========================================================================== */
+
+.content-page {
+  padding: 60px 0;
+}
+
+.content-page h2 {
+  margin: 30px 0;
+}
+
+.content-page ul {
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.content-page p, .content-page li {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.content-page p {
+  margin-bottom: 20px;
+}
+
+.content-page li {
+  list-style-type: square;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   Form
+   ========================================================================== */
+
+.form {
+  padding-top: 20px;
+}
+
+.form .form-group {
+  margin-bottom: 30px;
+}
+
+.field {
+  border: 1px solid #ccc;
+  color: #999 !important;
+  box-shadow: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 30px 20px;
+}
+
+.field-select {
+  color: #999 !important;
+  height: 62px !important;
+}
+
+.msg {
+  resize: none;
+  padding: 20px;
+}
+
+.form .btn {
+  background-color: #f03;
+  border-color: #f03; 
+}
+
+/* ==========================================================================
+   Videos
+   ========================================================================== */
+
+.video {
+  padding: 20px 0;
+}
+
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+
+.gallery {
+  background-color: #fff;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  height: 630px !important;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.heading {
+  background: transparent;
+  left: 50%;
+  padding: 0 15px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.title {
+  color: #444;
+  font-family: 'bebas_neuebold';
+  font-size: 48px;
+  letter-spacing: 1px;
+  margin: 0 0 40px;
+  padding-bottom: 15px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title:after {
+  background-color: #aaa;
+  bottom: -10px;
+  content: '';
+  height: 1px;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  width: 100px;
+}
+
+.subtitle {
+  font-family: 'bebas_neuebook';
+  display: block;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, .7);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.btn {
+  font-family: 'bebas_neuebold';
+  font-size: 24px;
+  letter-spacing: 1px;
+  min-width: 215px;
+  text-transform: uppercase;
+}
+
+.btn-outline {
+  border: 2px solid #f03;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background-color: #f03;
+  color: #fff;
+}
+
+.btn-outline-inverse {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-outline-inverse:hover {
+  background-color: #fff;
+  color: #f03;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media all and (max-width: 992px) {
+  .navbar-inverse .navbar-nav>li>a {
+    font-size: 12px;
+  }
+
+  .hero .title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .hero .title strong {
+    font-size: 50px;
+  }
+
+  .hero .title-section {
+    font-size: 60px;
+    line-height: 48px;
+  }
+
+  .hero .subtitle-section {
+    font-size: 38px;
+  }
+
+  .intro .call-to-action {
+    font-size: 80px;
+    line-height: 70px;
+  }
+
+  .contact-info .item {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .hero .title {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  .hero .title strong {
+    font-size: 40px;
+  }
+
+  .hero .title-section {
+    width: 80%;
+  }
+
+  .hero .title-section {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 20px;
+  }
+
+  .hero .subtitle-section {
+    font-size: 28px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  .intro .call-to-action {
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 20px;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .intro .call-to-action br {
+    display: none;
+  }
+
+  .donate .title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .donate .title strong {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .donate .btn {
+    padding: 5px 8px;
+  }
+
+  .form .form-group {
+    margin-bottom: 15px;
+  }
+
+  .contact .field {
+    padding: 25px 15px;
+    font-size: 14px;
+  }
+}
